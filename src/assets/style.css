@@ -1,13 +1,14 @@
 /*------------ Header ---------------*/
-#header {	position:relative;
-			height: 55px;
-			width: 100%;
-			background: url(img/header.png) repeat-x;
-			border-bottom: 1px solid #14212d;
-			box-shadow: 1px 3px 8px #8A8A8A;
-			-moz-box-shadow: 1px 3px 8px #8A8A8A;
-			-webkit-box-shadow: 1px 3px 8px #8A8A8A;
-		}
+#header {
+	position: relative;
+	height: 55px;
+	width: 100%;
+	background: url(img/header.png) repeat-x;
+	border-bottom: 1px solid #14212d;
+	box-shadow: 1px 3px 8px #8A8A8A;
+	-moz-box-shadow: 1px 3px 8px #8A8A8A;
+	-webkit-box-shadow: 1px 3px 8px #8A8A8A;
+}
 		
 #content-menu{	height:50px;
 				width: 300px;
@@ -233,22 +234,23 @@ background-color: #1A9B56;
 }
 
 	   
-#account-button{	width: 100%;
-					height: 100%;
-					margin:10px;
-					background: url("img/account-img.png") no-repeat;
-					display: block;
-	   		  }
+#account-button {
+	width: 100%;
+	height: 100%;
+	margin: 10px;
+	background: url("account-img.png") no-repeat;
+	display: block;
+}
 	   
 #account-button:hover {
-						background: url("img/account-img-hover.png") no-repeat;
-			  		  }
-#account-button:focus{
-						background: url("img/account-img-onclick.png") no-repeat;
-			 		 }	
-#account-button:active{
-						background: url("img/account-img-onclick.png") no-repeat;
-			  		  }	   
+	background: url("account-img-hover.png") no-repeat;
+}
+#account-button:focus {
+	background: url("account-img-onclick.png") no-repeat;
+}
+#account-button:active {
+	background: url("account-img-onclick.png") no-repeat;
+}
 
 #logo{	
 		font-family: 'Berkshire Swash', cursive;
@@ -320,11 +322,11 @@ html, body, #main{	height: 100%;
 		  		 }
 				 
 body >#main {
-				height: auto;
-				min-height: 100%;
-				background: url(img/body_background.png) repeat;
-				background:#fff;
-		   }
+	height: auto;
+	min-height: 100%;
+	background: url(body_background.png) repeat;
+	background: #fff;
+}
 		   
 a{
 	text-decoration:none;
@@ -902,24 +904,25 @@ background-color: #29A32D;
 	margin-left:45px;
 }
 /*------------ Footer ---------------*/
-#footer {	width: 100%;
-			height: 80px;
-			clear:both;
-			position: relative;
-			margin-top: -80px; /* negative value of footer height */
-			box-shadow: 0px -2px 25px #BDBDBD;
-			moz-box-shadow: 0 -2px 25px #BDBDBD;
-			-webkit-box-shadow: 0 -2px 25px #BDBDBD;		
-			background: url(img/footer_pattern.png) repeat;
-		}
+#footer {
+	width: 100%;
+	height: 80px;
+	clear: both;
+	position: relative;
+	margin-top: -80px; /* negative value of footer height */
+	box-shadow: 0px -2px 25px #BDBDBD;
+	moz-box-shadow: 0 -2px 25px #BDBDBD;
+	-webkit-box-shadow: 0 -2px 25px #BDBDBD;
+	background: url(img/footer_pattern.png) repeat;
+}
 		
 #footer::before {
-content: "";
-width: 100%;
-height: 60px;
-background: url("img/top_footer.png") repeat-x;
-position: absolute;
-top: -7px;
+	content: "";
+	width: 100%;
+	height: 60px;
+	background: url("img/top_footer.png") repeat-x;
+	position: absolute;
+	top: -7px;
 }
 /*------------Tenere Footer in basso------------*/		
 .clearfix:after {	content: ".";
