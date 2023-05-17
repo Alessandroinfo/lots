@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link href='http://fonts.googleapis.com/css?family=Berkshire+Swash|Averia+Libre' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" media="screen" href="style.css">
+<link href="img/faviring.png" rel="icon" type="image/x-icon" />
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-24010426-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script src="javascripts/jquery.js" type="text/javascript"></script>
+<title>LOTS | Lord of the Social</title>
+</head>
+<body>
+
+<div id="main">
+	<header id="header">
+	<div id="content-menu">
+			<div id="container-login">
+			<fieldset id="signin_menu">
+			<div id="signin_menu_caret"></div>
+    		<form method="post" id="signin" action="#form">
+     		<label for="username">Nome utente o email</label>
+      		<input id="username" name="username" value="" title="username" tabindex="4" type="text" autocomplete="on">
+      		<p>
+        	<label for="password">Password</label>
+        	<input id="password"name="password" value="" title="password" tabindex="5" type="password">
+      		</p>
+      		<p class="remember">
+        	<input id="signin_submit" value="Log in" tabindex="6" type="submit">
+        	<input id="remember" name="remember_me" value="1" tabindex="7" type="checkbox">
+        	<label for="remember">Ricordami</label>
+      		</p>
+      		<p class="forgot"> <a href="#" id="resend_password_link">Recupera la password</a> </p>
+    		</form>
+  			</fieldset>
+			</div>
+			
+			<div id="container-register">
+			<fieldset id="register_menu">
+			<div id="register_menu_caret"></div>
+    		<form method="post" id="register" action="#form">
+     		<label for="username">Username</label>
+      		<input id="username" name="username" value="" title="username" tabindex="4" type="text" autocomplete="on">
+      		</p>
+      		<p>
+			<label for="email">E-mail</label>
+        	<input id="email"name="email" value="" title="email" tabindex="5" type="text">
+      		</p>
+        	<label for="password">Password</label>
+        	<input id="password"name="password" value="" title="password" tabindex="5" type="password">
+      		</p>
+      		<p>
+        	<input id="register_submit" value="Registrati" tabindex="6" type="submit">
+    		</form>
+  			</fieldset>
+			</div>
+			<script type="text/javascript">
+			$(document).ready(function()
+			{
+				$(".signin").click(function(e)
+				{	
+					
+					$(".register").removeClass("menu-open");
+					$("fieldset#register_menu").hide();
+					e.preventDefault();
+					if($(".signin").hasClass("menu-open"))
+					{
+						$("body").removeClass("fade");
+						$(".signin").removeClass("menu-open");
+						$("fieldset#signin_menu").hide();
+					}
+					else
+					{	
+						$("body").addClass("fade");
+						$("fieldset#signin_menu").show();
+						$(".signin").addClass("menu-open");
+					}
+					});
+					$("fieldset#signin_menu").mouseup(function() {return false});
+					$(".signin").mouseup(function() {return false});
+					$(document).mouseup(function(e)
+					{
+					if($(e.target).parent(".signin").length==0)
+					{	$("body").removeClass("fade");
+						$(".signin").removeClass("menu-open");
+						$("fieldset#signin_menu").hide(150);
+						$(".fade").hide(150);
+					}
+				});
+				
+				$(".register").click(function(e)
+				{	
+					$(".signin").removeClass("menu-open");
+					$("fieldset#signin_menu").hide();
+					e.preventDefault();
+					if($(".register").hasClass("menu-open"))
+					{
+						$(".register").removeClass("menu-open");
+						$("fieldset#register_menu").hide();
+					}
+					else
+					{
+						$("fieldset#register_menu").show();
+						$(".register").addClass("menu-open");
+					}
+					});
+					$("fieldset#register_menu").mouseup(function() {return false});
+					$(".register").mouseup(function() {return false});
+					$(document).mouseup(function(e)
+					{
+					if($(e.target).parent(".register").length==0)
+					{
+						$(".register").removeClass("menu-open");
+						$("fieldset#register_menu").hide(150);
+					}
+				});
+			});
+			</script>
+			<a id="blue-button" class="signin" href="#login.html">Login</a>
+			<a id="green-button" class="register" href="#registrati.html">Registrati</a>
+			<!--<a id="account-button" href="#URL"></a>-->
+		</div>
+	<a id="logo" href="#awd">LOTS</a>
+	<div id="logo-sub">Lord of the Social</div>
+	</header>
+	<div id="container-page" class="clearfix">
+		<h1>Gestire ciò che ti succede</h1>
+		<h2>Urla una frase a tutti i tuoi social con un click.</h2>
+		<h2>Semplice. Veloce. Social. </h2>
+		<h2>Un social per domarli tutti, un social per trovarli, un social per gestirli e nella semplicità incatenarli.</h2>
+		<div id="center">
+			<div class="module">
+					<script>
+						function empty()
+						{
+	  						var ta = document.getElementById("id_empty");
+	  						if (ta.getAttribute("class") == "textbox_border_grey inizio") 
+							ta.value = "";
+							document.getElementById("id_empty").className = 'textbox_border_black inizio';
+						}
+						function full()
+						{
+							var ta =document.getElementById("id_empty");
+							if (ta.getAttribute("class") == "textbox_border_black inizio" && ta.value=="")
+							{
+								ta.value = "Scrivi qui per condividere...";
+								document.getElementById("id_empty").className = 'textbox_border_grey inizio';
+							}
+							
+						}
+						
+					</script><!--placeholder="scrivi"-->
+					<textarea id="id_empty" onfocus="empty();" onblur="full();" class="textbox_border_grey inizio">Scrivi qui per condividere...</textarea>
+					<div  class="bottom-menu-center" >
+						<a id="share"href="#login.html">Condividi</a>
+					</div>
+				</div>
+			</div>
+	</div>
+</div>
+
+<footer id="footer"></footer>
+
+</body>
+</html>
